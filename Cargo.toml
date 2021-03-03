@@ -4,9 +4,13 @@ version = "0.1.0"
 authors = ["k-yomo <kanji.yy@gmail.com>"]
 edition = "2018"
 
-[[bin]] # Bin to run the HelloWorld gRPC server
+[[bin]]
 name = "helloworld-server"
 path = "src/server.rs"
+
+[[bin]]
+name = "helloworld-client"
+path = "src/client.rs"
 
 [dependencies]
 tonic = "0.4"
